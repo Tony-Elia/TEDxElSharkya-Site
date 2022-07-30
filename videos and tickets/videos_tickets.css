@@ -1,7 +1,146 @@
-html {
+html, body {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 0;
   margin: 0;
+  font-family: 'Poppins';
+  background-color: black;
+  color: white;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.b-w {
+  color: white !important;
+}
+
+span.header-text {
+  position: relative;
+  font-size: 20pt;
+}
+
+span.header-text::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff2b06;
+}
+
+#videos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: medium;
+  overflow-x: hidden;
+}
+
+#videos img {
+  width: 200px;
+}
+
+#videos .subtitle {
+  color: #fff9f9bd;
+}
+
+#videos .speaker {
+  position: relative;
+  overflow-x: hidden;
+}
+
+#videos .speaker:hover span {
+  height: 100%;
+}
+
+#videos .speaker span {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 7px;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: rgba(112, 3, 6, 0.5);
+  color: rgba(246, 221, 221, 0.9);
+  -webkit-transition: .25s;
+  transition: .25s;
+  cursor: pointer;
+}
+
+.tickets-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  font-size: 17pt;
+  -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+          clip-path: polygon(50% 10%, 100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+  background: rgba(112, 3, 6, 0.5);
+  padding: 60px 0;
+}
+
+.tickets-section img {
+  padding-top: 20px;
+  width: 120px;
+}
+
+.tickets-section button {
+  background-color: white;
+  color: black;
+  font-size: 17pt;
+  padding: 10px 55px;
+  margin-top: 2rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.tickets-section button:hover {
+  color: white;
+  background-color: black;
 }
 /*# sourceMappingURL=videos_tickets.css.map */

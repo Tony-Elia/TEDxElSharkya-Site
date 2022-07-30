@@ -1,5 +1,108 @@
-html {
+$red-orange: #ff2b06;
+$bloody-red: rgba(112, 3, 6, 0.5);
+$secondary-text: #fff9f9bd;
+$white: black;
+$black: white;
+html, body {
     box-sizing: content-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins';
+    background-color: $white;
+    color: $black;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    @include center();
+}
+
+.col{
+    flex-direction: column !important;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.b-w {
+    color: $black !important;
+}
+
+span.header-text {
+    position: relative;
+    font-size: 20pt;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $red-orange;
+    }
+}
+
+#videos {
+    width: 100%;
+    @include center();
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    overflow-x: hidden;
+    img {
+        width: 200px;
+    }
+    .subtitle {
+        color: $secondary-text;
+    }
+    .speaker{
+        position: relative;
+        overflow-x: hidden;
+        &:hover span{
+            height: 100%;
+        }
+        span {
+            position: absolute;
+            @include center();
+            bottom: 7px;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background-color: $bloody-red;
+            color: rgba(246, 221, 221, 0.9);
+            transition: .25s;
+            cursor: pointer;
+        }
+    }
+}
+
+.tickets-section {
+    @include center();
+    height: 400px;
+    font-size: 17pt;
+    clip-path: polygon(50% 10%, 100% 0, 100% 60%, 50% 100%, 0 60%, 0 0);
+    background: $bloody-red;
+    padding: 60px 0;
+    img {
+        padding-top: 20px;
+        width: 120px;
+    }
+    button {
+        background-color: $black;
+        color: $white;
+        font-size: 17pt;
+        padding: 10px 55px;
+        margin-top: 2rem;
+        transition: 0.25s;
+        cursor: pointer;
+        &:hover {
+            color: $black;
+            background-color: $white;
+        }
+    }
 }
