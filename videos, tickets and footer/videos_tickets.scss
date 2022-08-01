@@ -3,6 +3,8 @@ $bloody-red: rgba(112, 3, 6, 0.5);
 $secondary-text: #fff9f9bd;
 $white: black;
 $black: white;
+$footer-bg: #241e1e;
+
 html, body {
     box-sizing: content-box;
     padding: 0;
@@ -103,6 +105,60 @@ span.header-text {
         &:hover {
             color: $black;
             background-color: $white;
+        }
+    }
+}
+
+footer {
+    background-color: $footer-bg;
+    width: 100%;
+    @include center();
+    flex-wrap: wrap;
+    .container{
+        max-width: 90% !important;
+        img {
+            width: 150px;
+            margin-left: -10px;
+        }
+        .description {
+            color: $secondary-text;
+            font-size: 12px;
+            margin-top: -15px;
+            max-width: 400px;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 1.2rem;
+        }
+        .links a,
+        .links a img {
+            width: 20px;
+        }
+        .join-us,
+        .about-us {
+            flex-direction: column;
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                padding-left: 0;
+                margin-top: 0;
+                color: $secondary-text;
+                font-size: 12px;
+                li {
+                    margin: 3px 0px;
+                }
+            }
+        }
+        @media (min-width: 1000px) {
+            img {
+                width: 200px;
+            }
+            .description,
+            ul {
+                font-size: 15px;
+            }
         }
     }
 }

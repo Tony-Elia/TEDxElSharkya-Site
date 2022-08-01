@@ -143,4 +143,89 @@ span.header-text::before {
   color: white;
   background-color: black;
 }
+
+footer {
+  background-color: #241e1e;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .container {
+  max-width: 90% !important;
+}
+
+footer .container img {
+  width: 150px;
+  margin-left: -10px;
+}
+
+footer .container .description {
+  color: #fff9f9bd;
+  font-size: 12px;
+  margin-top: -15px;
+  max-width: 400px;
+}
+
+footer .container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+footer .container .links a,
+footer .container .links a img {
+  width: 20px;
+}
+
+footer .container .join-us,
+footer .container .about-us {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .join-us ul,
+footer .container .about-us ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-top: 0;
+  color: #fff9f9bd;
+  font-size: 12px;
+}
+
+footer .container .join-us ul li,
+footer .container .about-us ul li {
+  margin: 3px 0px;
+}
+
+@media (min-width: 1000px) {
+  footer .container img {
+    width: 200px;
+  }
+  footer .container .description,
+  footer .container ul {
+    font-size: 15px;
+  }
+}
 /*# sourceMappingURL=videos_tickets.css.map */
