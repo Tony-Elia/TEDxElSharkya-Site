@@ -1,1 +1,104 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html, body {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+  background-color: white;
+  color: black;
+  overflow-x: hidden;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.row > * {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.container {
+  max-width: -webkit-fit-content;
+}
+
+span.header-text {
+  position: relative;
+  font-size: 20pt;
+  width: auto;
+  padding: 0;
+}
+
+span.header-text::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff2b06;
+}
+
+.events .subtitle p {
+  color: #000000bd;
+}
+
+.events button {
+  background-color: #ff2b06;
+  border: #ff2b06;
+  color: white;
+  font-size: 15pt;
+  padding: 10px 35px;
+  margin-top: .2rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.events button:hover {
+  color: white;
+  background-color: #700306;
+}
+
+.events img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.event-highlights {
+  margin-top: 5rem;
+}
+
+.event-highlights .d-flex {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.event-highlights .d-flex img {
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+/*# sourceMappingURL=style.css.map */
